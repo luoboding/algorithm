@@ -29,6 +29,12 @@ int IsEmpty(List list);
 // 根据内容查找
 Element Find(char* content, List list);
 
+Element FindPrevious(char* content, List list);
+
+void Insert(char* content, List list, Element before);
+
+void DeleteList(List list);
+
 void LinkTest();
 
 #endif /* Link_h */

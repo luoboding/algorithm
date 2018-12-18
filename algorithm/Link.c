@@ -71,6 +71,33 @@ void Foreach(List list) {
     }
 }
 
+void Insert(char* content, List list, Element before) {
+    Element element = malloc(sizeof(Element));
+    // 这里应该检查是否为NULL
+    element->content = content;
+    element->next = before->next;
+    before->next = element;
+}
+
+Element FindPrevious(char* content, List list) {
+    Element current = list;
+    Element previous = NULL;
+    while ( current!= NULL && current->content != content) {
+        previous = current;
+        current = current->next;
+    }
+    return previous;
+}
+
+// 删除整个链表
+void DeleteList(List list) {
+    Element current = list;
+    while (current != NULL) {
+        Element temp = current -> next;
+        free(current);
+        current = temp;
+    }
+}
 
 void LinkTest() {
     char* arr[] = {"hello", "world", "how", "are", "you"};
@@ -79,12 +106,25 @@ void LinkTest() {
     Foreach(list);
     Element find = Find("world", list);
     assert(find -> content == "world");
+    
+    Element beforeFind = FindPrevious(find->content, list);
+    assert(beforeFind->content == "hello");
+    
     Remove(find, list);
     printf("remove find, then foreach; \n");
+    Foreach(list);
+    
+    
+    Insert("my friends!", list, beforeFind);
     Foreach(list);
     
     Element lost = Find("world", list);
     assert(lost == NULL);
     Element last = Find("you", list);
     assert(IsLast(last, list));
+    printf("delete all list:\n");
+    
+    DeleteList(list);
+    assert(IsEmpty(list));
+    
 }

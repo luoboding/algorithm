@@ -24,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F31C326721C943AC00B54E6E /* describe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = describe.h; sourceTree = "<group>"; };
 		F367D7B021C7E40A00EA8DA6 /* Link.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Link.c; sourceTree = "<group>"; };
 		F3A70AA521C7DF8100425FB8 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A70AA821C7DF8100425FB8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 				F3A70AA821C7DF8100425FB8 /* main.c */,
 				F3A70AAF21C7DFC600425FB8 /* Link.h */,
 				F367D7B021C7E40A00EA8DA6 /* Link.c */,
+				F31C326721C943AC00B54E6E /* describe.h */,
 			);
 			path = algorithm;
 			sourceTree = "<group>";
