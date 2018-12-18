@@ -9,7 +9,7 @@
 #include "Link.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+#include <assert.h>
 
 
 /* 判断当前节点是否为最后节点 */
@@ -69,4 +69,22 @@ void Foreach(List list) {
         printf("content is %s\n", current->content);
         current = current->next;
     }
+}
+
+
+void LinkTest() {
+    char* arr[] = {"hello", "world", "how", "are", "you"};
+    List list = Create(arr, 5);
+    assert(!IsEmpty(list));
+    Foreach(list);
+    Element find = Find("world", list);
+    assert(find -> content == "world");
+    Remove(find, list);
+    printf("remove find, then foreach; \n");
+    Foreach(list);
+    
+    Element lost = Find("world", list);
+    assert(lost == NULL);
+    Element last = Find("you", list);
+    assert(IsLast(last, list));
 }

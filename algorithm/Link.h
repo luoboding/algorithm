@@ -29,4 +29,6 @@ int IsEmpty(List list);
 // 根据内容查找
 Element Find(char* content, List list);
 
+void LinkTest();
+
 #endif /* Link_h */
