@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F31C326A21C947AD00B54E6E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F31C326921C947AD00B54E6E /* README.md */; };
-		F367D7B121C7E40A00EA8DA6 /* Link.c in Sources */ = {isa = PBXBuildFile; fileRef = F367D7B021C7E40A00EA8DA6 /* Link.c */; };
+		F3050CFD21D12DF90032D911 /* LinkStack.c in Sources */ = {isa = PBXBuildFile; fileRef = F3050CFB21D12DF90032D911 /* LinkStack.c */; };
+		F3050D0021D12E0C0032D911 /* ArrayStack.c in Sources */ = {isa = PBXBuildFile; fileRef = F3050CFE21D12E0C0032D911 /* ArrayStack.c */; };
 		F3A70AA921C7DF8100425FB8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F3A70AA821C7DF8100425FB8 /* main.c */; };
+		F3B59E6121CA837F00FA51A1 /* Link.c in Sources */ = {isa = PBXBuildFile; fileRef = F3B59E6021CA837F00FA51A1 /* Link.c */; };
+		F3B59E6421CA83A100FA51A1 /* LinkCursor.c in Sources */ = {isa = PBXBuildFile; fileRef = F3B59E6221CA83A100FA51A1 /* LinkCursor.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,13 +27,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F31C326721C943AC00B54E6E /* describe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = describe.h; sourceTree = "<group>"; };
-		F31C326821C947AD00B54E6E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F31C326921C947AD00B54E6E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F367D7B021C7E40A00EA8DA6 /* Link.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Link.c; sourceTree = "<group>"; };
+		F3050CFB21D12DF90032D911 /* LinkStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkStack.c; sourceTree = "<group>"; };
+		F3050CFC21D12DF90032D911 /* LinkStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkStack.h; sourceTree = "<group>"; };
+		F3050CFE21D12E0C0032D911 /* ArrayStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ArrayStack.c; sourceTree = "<group>"; };
+		F3050CFF21D12E0C0032D911 /* ArrayStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayStack.h; sourceTree = "<group>"; };
 		F3A70AA521C7DF8100425FB8 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A70AA821C7DF8100425FB8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		F3A70AAF21C7DFC600425FB8 /* Link.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
+		F3B59E5E21CA837F00FA51A1 /* Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
+		F3B59E5F21CA837F00FA51A1 /* Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type.h; sourceTree = "<group>"; };
+		F3B59E6021CA837F00FA51A1 /* Link.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Link.c; sourceTree = "<group>"; };
+		F3B59E6221CA83A100FA51A1 /* LinkCursor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkCursor.c; sourceTree = "<group>"; };
+		F3B59E6321CA83A100FA51A1 /* LinkCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkCursor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +54,6 @@
 		F3A70A9C21C7DF8100425FB8 = {
 			isa = PBXGroup;
 			children = (
-				F31C326821C947AD00B54E6E /* LICENSE */,
-				F31C326921C947AD00B54E6E /* README.md */,
 				F3A70AA721C7DF8100425FB8 /* algorithm */,
 				F3A70AA621C7DF8100425FB8 /* Products */,
 			);
@@ -66,10 +70,16 @@
 		F3A70AA721C7DF8100425FB8 /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				F3B59E6221CA83A100FA51A1 /* LinkCursor.c */,
+				F3B59E6321CA83A100FA51A1 /* LinkCursor.h */,
+				F3B59E5E21CA837F00FA51A1 /* Link.h */,
+				F3B59E5F21CA837F00FA51A1 /* Type.h */,
+				F3B59E6021CA837F00FA51A1 /* Link.c */,
 				F3A70AA821C7DF8100425FB8 /* main.c */,
-				F3A70AAF21C7DFC600425FB8 /* Link.h */,
-				F367D7B021C7E40A00EA8DA6 /* Link.c */,
-				F31C326721C943AC00B54E6E /* describe.h */,
+				F3050CFB21D12DF90032D911 /* LinkStack.c */,
+				F3050CFC21D12DF90032D911 /* LinkStack.h */,
+				F3050CFE21D12E0C0032D911 /* ArrayStack.c */,
+				F3050CFF21D12E0C0032D911 /* ArrayStack.h */,
 			);
 			path = algorithm;
 			sourceTree = "<group>";
@@ -131,9 +141,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F31C326A21C947AD00B54E6E /* README.md in Sources */,
+				F3050CFD21D12DF90032D911 /* LinkStack.c in Sources */,
 				F3A70AA921C7DF8100425FB8 /* main.c in Sources */,
-				F367D7B121C7E40A00EA8DA6 /* Link.c in Sources */,
+				F3050D0021D12E0C0032D911 /* ArrayStack.c in Sources */,
+				F3B59E6121CA837F00FA51A1 /* Link.c in Sources */,
+				F3B59E6421CA83A100FA51A1 /* LinkCursor.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

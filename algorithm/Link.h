@@ -8,17 +8,7 @@
 
 #ifndef Link_h
 #define Link_h
-
-struct Node {
-    char* content;
-    struct Node* next;
-};
-
-typedef struct Node *PtrToNode;
-typedef PtrToNode List; // 链表
-typedef PtrToNode Element;
-typedef PtrToNode Postiion; // 查找的结果
-
+#include "Type.h"
 
 List MakeEmpty(List link);
 List Create(char* array[], int length);

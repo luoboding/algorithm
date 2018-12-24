@@ -7,11 +7,11 @@
 //
 
 #include <stdio.h>
-#include "Link.h"
+#include "LinkCursor.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("start: \n");
-    LinkTest();
+    TestCursor();
     return 0;
 }
